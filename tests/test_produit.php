@@ -31,3 +31,6 @@ $exceptionRetrait = false;
 try { $produit->retirerQuantite(999); }
 catch (InvalidArgumentException $e) { $exceptionRetrait = true; }
 verifier($exceptionRetrait, 'Retirer plus que le stock lève une exception');
+
+
+verifier(abs($produit->valeurStock() - 1800) < 0.001, 'La valeur du stock vaut 12 x 150');

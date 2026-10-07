@@ -1,5 +1,4 @@
 # Nom du groupe : Gestion de stock
-
 Application PHP en ligne de commande qui gère le stock d'un magasin
 (produits, quantités, valeur du stock, commandes).
 
@@ -10,7 +9,6 @@ Application PHP en ligne de commande qui gère le stock d'un magasin
 - **Commande** (C) : ajouterLigne(), total(), valider(), estValidee(), afficher()
 
 ## Équipe
-## Étudiant C - Classe Commande & Menu
-- Implémentation de la classe Commande (gestion des lignes, total, validation)
-- Création des tests unitaires pour Commande
-- Développement du menu interactif dans index.php
+- ETTAJANY RANIA - Classe Commande  (C) & Menu
+- ESSABI Douae : classe Produit (A)
+-HIBA OUBENHADDOU : classe Stock (B)
