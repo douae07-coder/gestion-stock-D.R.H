@@ -14,3 +14,20 @@ $exceptionQte = false;
 try { new Produit('P003', 'Écran', 100, -1); }
 catch (InvalidArgumentException $e) { $exceptionQte = true; }
 verifier($exceptionQte, 'Une quantité négative lève une exception');
+
+
+$produit->ajouterQuantite(5);
+verifier($produit->getQuantite() === 15, 'Après ajout de 5, il y en a 15');
+
+$produit->retirerQuantite(3);
+verifier($produit->getQuantite() === 12, 'Après retrait de 3, il en reste 12');
+
+$exceptionAjout = false;
+try { $produit->ajouterQuantite(0); }
+catch (InvalidArgumentException $e) { $exceptionAjout = true; }
+verifier($exceptionAjout, 'Ajouter 0 lève une exception');
+
+$exceptionRetrait = false;
+try { $produit->retirerQuantite(999); }
+catch (InvalidArgumentException $e) { $exceptionRetrait = true; }
+verifier($exceptionRetrait, 'Retirer plus que le stock lève une exception');
