@@ -1,5 +1,5 @@
 # Nom du groupe : Gestion de stock
-
+- Prénom Nom : classe Stock (B)
 Application PHP en ligne de commande qui gère le stock d'un magasin
 (produits, quantités, valeur du stock, commandes).
 
